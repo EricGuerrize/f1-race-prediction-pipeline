@@ -1,0 +1,11 @@
+services:
+  f1-pipeline:
+    build: .
+    image: f1-pipeline:local
+    container_name: f1-pipeline
+    environment:
+      F1P_PROJECT_ROOT: /app
+    volumes:
+      # Persistência local opcional (filesystem efêmero em cloud)
+      - ./data:/app/data
+    command: ["f1p", "demo"]
