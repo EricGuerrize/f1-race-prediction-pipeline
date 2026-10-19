@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Env / IDE
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Dados gerados (sample versionado; bronze/cache/warehouse locais)
+data/bronze/
+data/cache/
+data/warehouse.duckdb
+data/warehouse.duckdb.wal
+*.duckdb
+*.duckdb.wal
+
+# FastF1 / notebooks
+*.ipynb_checkpoints/
+.cache/
+data/_sample_build/
